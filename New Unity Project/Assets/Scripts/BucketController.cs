@@ -11,7 +11,7 @@ public class BucketController : MonoBehaviour
     //Similarly, collisions apply only to collider without trigger set
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("GrabCube"))
+        if(other.gameObject.CompareTag(""))
         {
             HighlightController hc = other.GetComponent<HighlightController>();
             Color cubeColor = hc.GetBaseColor();
